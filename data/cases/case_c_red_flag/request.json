@@ -1,0 +1,7 @@
+{
+  "id": "case_c",
+  "title": "Case C — Red flag / urgent pathway",
+  "requested_service": "Lumbar spine MRI without contrast",
+  "policy_file": "lumbar_mri_policy.md",
+  "retrieval_top_k": 4
+}

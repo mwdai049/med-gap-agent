@@ -1,0 +1,93 @@
+{
+  "recommendation": "URGENT_HUMAN_REVIEW",
+  "confidence": "high",
+  "uncertainty_flag": false,
+  "pathway_applied": "Pathway 2: Neurologic deficit or red flag symptoms",
+  "decomposed_criteria": [
+    {
+      "criterion_id": "P1-1",
+      "criterion_text": "Low back pain or radicular symptoms persist for at least 6 weeks",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P1-2",
+      "criterion_text": "Conservative treatment was attempted",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P2-1",
+      "criterion_text": "Red flag symptoms including cauda equina concern",
+      "pathway": "Pathway 2"
+    }
+  ],
+  "extracted_facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "Acute lower back pain",
+      "source_quote": "acute lower back pain"
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "New urinary retention",
+      "source_quote": "new urinary retention"
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Saddle anesthesia",
+      "source_quote": "saddle anesthesia"
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Bilateral leg weakness",
+      "source_quote": "bilateral leg weakness"
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "Provider concern for cauda equina syndrome",
+      "source_quote": "concerned for cauda equina syndrome"
+    }
+  ],
+  "criteria_evaluation": [
+    {
+      "criterion_id": "P1-1",
+      "criterion_text": "Symptoms ≥ 6 weeks",
+      "pathway": "Pathway 1",
+      "status": "NOT_APPLICABLE",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "Bypassed due to red flag pathway",
+      "explanation": "Pathway 2 red flags take precedence over duration requirements.",
+      "source": "Policy"
+    },
+    {
+      "criterion_id": "P1-2",
+      "criterion_text": "Conservative therapy attempted",
+      "pathway": "Pathway 1",
+      "status": "NOT_APPLICABLE",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "Bypassed due to red flag pathway",
+      "explanation": "Urgent red flag presentation bypasses conservative therapy criteria.",
+      "source": "Policy"
+    },
+    {
+      "criterion_id": "P2-1",
+      "criterion_text": "Red flag / cauda equina symptoms",
+      "pathway": "Pathway 2",
+      "status": "MET",
+      "policy_source": "Pathway 2",
+      "patient_evidence": "Urinary retention, saddle anesthesia, bilateral leg weakness",
+      "explanation": "Multiple cauda equina red flags are documented.",
+      "source": "Patient note"
+    }
+  ],
+  "evidence_gaps": [],
+  "rationale": "Red flag presentation consistent with cauda equina concern. Pathway 2 applies; routine conservative-therapy criteria are bypassed. Escalate for urgent clinical review rather than routine prior-auth processing.",
+  "suggested_next_steps": [
+    "Escalate immediately for urgent clinical review",
+    "Do not apply routine 6-week conservative therapy requirements",
+    "Coordinate emergent imaging per clinical protocol"
+  ],
+  "policy_citations": [
+    "Pathway 2: Neurologic deficit or red flag symptoms",
+    "Red flag presentations should be escalated for immediate clinical review"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "case_a",
+  "title": "Case A — Likely meets criteria",
+  "requested_service": "Lumbar spine MRI without contrast",
+  "policy_file": "lumbar_mri_policy.md",
+  "retrieval_top_k": 4
+}

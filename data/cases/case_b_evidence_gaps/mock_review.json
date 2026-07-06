@@ -1,0 +1,137 @@
+{
+  "recommendation": "NEEDS_MORE_DOCUMENTATION",
+  "confidence": "high",
+  "uncertainty_flag": false,
+  "pathway_applied": null,
+  "decomposed_criteria": [
+    {
+      "criterion_id": "P1-1",
+      "criterion_text": "Low back pain or radicular symptoms persist for at least 6 weeks",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P1-2",
+      "criterion_text": "Conservative treatment was attempted",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P1-3",
+      "criterion_text": "Symptoms have not meaningfully improved with conservative treatment",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P1-4",
+      "criterion_text": "Imaging results are expected to affect management",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P2-1",
+      "criterion_text": "Neurologic deficit or red flag symptoms documented",
+      "pathway": "Pathway 2"
+    }
+  ],
+  "extracted_facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "Lower back pain for 3 weeks",
+      "source_quote": "lower back pain for 3 weeks"
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "No neurologic deficits documented on exam",
+      "source_quote": "No neurologic deficits documented"
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Physical therapy not completed",
+      "source_quote": "has not completed physical therapy"
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Patient prefers MRI over physical therapy",
+      "source_quote": "Patient prefers MRI over physical therapy"
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "MRI requested due to persistent pain only",
+      "source_quote": "requests MRI because pain is persistent"
+    }
+  ],
+  "criteria_evaluation": [
+    {
+      "criterion_id": "P1-1",
+      "criterion_text": "Symptoms ≥ 6 weeks",
+      "pathway": "Pathway 1",
+      "status": "NOT_MET",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "Pain for 3 weeks only",
+      "explanation": "Documented duration is below the 6-week requirement.",
+      "source": "Patient note"
+    },
+    {
+      "criterion_id": "P1-2",
+      "criterion_text": "Conservative therapy attempted",
+      "pathway": "Pathway 1",
+      "status": "NOT_DOCUMENTED",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "PT not completed",
+      "explanation": "No completed conservative treatment trial is documented.",
+      "source": "Patient note"
+    },
+    {
+      "criterion_id": "P1-3",
+      "criterion_text": "Failed conservative treatment",
+      "pathway": "Pathway 1",
+      "status": "NOT_DOCUMENTED",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "No trial completion or response documented",
+      "explanation": "Cannot assess treatment failure without a documented trial.",
+      "source": "Patient note"
+    },
+    {
+      "criterion_id": "P1-4",
+      "criterion_text": "Imaging affects management",
+      "pathway": "Pathway 1",
+      "status": "NOT_DOCUMENTED",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "No treatment plan tied to imaging",
+      "explanation": "Note does not explain how MRI would change management.",
+      "source": "Patient note"
+    },
+    {
+      "criterion_id": "P2-1",
+      "criterion_text": "Neurologic finding / red flag",
+      "pathway": "Pathway 2",
+      "status": "NOT_DOCUMENTED",
+      "policy_source": "Pathway 2",
+      "patient_evidence": "Explicitly no neurologic deficits",
+      "explanation": "No neurologic deficit or red flag symptoms are documented.",
+      "source": "Patient note"
+    }
+  ],
+  "evidence_gaps": [
+    {
+      "description": "Duration less than 6 weeks",
+      "related_criterion_id": "P1-1"
+    },
+    {
+      "description": "Conservative therapy not documented as attempted or completed",
+      "related_criterion_id": "P1-2"
+    },
+    {
+      "description": "No neurologic deficit or red flag documented",
+      "related_criterion_id": "P2-1"
+    },
+    {
+      "description": "No clear statement that imaging would change management",
+      "related_criterion_id": "P1-4"
+    }
+  ],
+  "rationale": "Neither pathway is met. Duration and conservative therapy requirements are not satisfied, and there is no documented link between imaging and management planning.",
+  "suggested_next_steps": [
+    "Request documentation of conservative treatment trial and response",
+    "Clarify expected impact of MRI on treatment plan",
+    "Re-evaluate if symptoms persist beyond 6 weeks with documented conservative care"
+  ],
+  "policy_citations": ["Documentation standards", "Pathway 1: Persistent symptoms after conservative management"]
+}

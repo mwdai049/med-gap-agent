@@ -1,0 +1,116 @@
+{
+  "recommendation": "LIKELY_MEETS",
+  "confidence": "high",
+  "uncertainty_flag": false,
+  "pathway_applied": "Pathway 1: Persistent symptoms after conservative management",
+  "decomposed_criteria": [
+    {
+      "criterion_id": "P1-1",
+      "criterion_text": "Low back pain or radicular symptoms persist for at least 6 weeks",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P1-2",
+      "criterion_text": "Conservative treatment was attempted",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P1-3",
+      "criterion_text": "Symptoms have not meaningfully improved with conservative treatment",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P1-4",
+      "criterion_text": "Imaging results are expected to affect management",
+      "pathway": "Pathway 1"
+    },
+    {
+      "criterion_id": "P2-1",
+      "criterion_text": "Neurologic deficit or red flag symptoms documented",
+      "pathway": "Pathway 2"
+    }
+  ],
+  "extracted_facts": [
+    {
+      "fact_id": "F1",
+      "fact_text": "Lower back pain with left leg radiation for 9 weeks",
+      "source_quote": "lower back pain radiating to the left leg for 9 weeks"
+    },
+    {
+      "fact_id": "F2",
+      "fact_text": "Completed 6 weeks of physical therapy and NSAIDs",
+      "source_quote": "Completed 6 weeks of physical therapy and NSAIDs"
+    },
+    {
+      "fact_id": "F3",
+      "fact_text": "Minimal improvement after conservative treatment",
+      "source_quote": "minimal improvement"
+    },
+    {
+      "fact_id": "F4",
+      "fact_text": "Decreased left ankle reflex and positive straight-leg raise",
+      "source_quote": "decreased left ankle reflex and positive straight-leg raise"
+    },
+    {
+      "fact_id": "F5",
+      "fact_text": "MRI may guide epidural steroid injection planning",
+      "source_quote": "considering epidural steroid injection depending on MRI findings"
+    }
+  ],
+  "criteria_evaluation": [
+    {
+      "criterion_id": "P1-1",
+      "criterion_text": "Symptoms ≥ 6 weeks",
+      "pathway": "Pathway 1",
+      "status": "MET",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "Pain for 9 weeks",
+      "explanation": "Documented symptom duration exceeds the 6-week threshold.",
+      "source": "Patient note"
+    },
+    {
+      "criterion_id": "P1-2",
+      "criterion_text": "Conservative therapy attempted",
+      "pathway": "Pathway 1",
+      "status": "MET",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "6 weeks of PT and NSAIDs",
+      "explanation": "Conservative treatment trial is explicitly documented.",
+      "source": "Patient note"
+    },
+    {
+      "criterion_id": "P1-3",
+      "criterion_text": "Failed conservative treatment",
+      "pathway": "Pathway 1",
+      "status": "MET",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "Minimal improvement documented",
+      "explanation": "Note states minimal improvement after conservative care.",
+      "source": "Patient note"
+    },
+    {
+      "criterion_id": "P1-4",
+      "criterion_text": "Imaging affects management",
+      "pathway": "Pathway 1",
+      "status": "MET",
+      "policy_source": "Pathway 1",
+      "patient_evidence": "Considering epidural injection based on MRI",
+      "explanation": "Provider links MRI findings to injection planning.",
+      "source": "Patient note"
+    },
+    {
+      "criterion_id": "P2-1",
+      "criterion_text": "Neurologic finding documented",
+      "pathway": "Pathway 2",
+      "status": "MET",
+      "policy_source": "Pathway 2",
+      "patient_evidence": "Decreased ankle reflex, positive straight-leg raise",
+      "explanation": "Objective neurologic findings are documented on exam.",
+      "source": "Patient note"
+    }
+  ],
+  "evidence_gaps": [],
+  "rationale": "Pathway 1 is satisfied: symptoms exceed 6 weeks, conservative therapy was attempted without meaningful improvement, neurologic findings are documented, and imaging is linked to injection planning.",
+  "suggested_next_steps": [],
+  "policy_citations": ["Pathway 1: Persistent symptoms after conservative management"]
+}
